@@ -29,7 +29,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #  Don't forget to COMMIT your work by using  VCS ~ Commit and Push.
 ########################################################################
 import rosegraphics as rg
-#Import RoseGraphics for Ease of Use
+#Import RoseGraphics for ease of use
 window = rg.TurtleWindow()
 #Set the window to be simple and easy.
 m = rg.SimpleTurtle('Turtle')
@@ -41,4 +41,7 @@ n.pen = rg.Pen('green')
 m.speed = 5
 n.speed = 10
 #Set that speed
-size = 200
+size = 400
+#Set size of circle
+for a in range(20)
+    m.draw_circle(size)
