@@ -131,6 +131,7 @@ joshua.forward(90)
 joshua.right(90)
 joshua.backward(90)
 joshua.left(90)
+joshua.backward(90)
 ########################################################################
 #
 # DONE: 5.
