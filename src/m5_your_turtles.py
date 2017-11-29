@@ -29,19 +29,38 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #  Don't forget to COMMIT your work by using  VCS ~ Commit and Push.
 ########################################################################
 import rosegraphics as rg
-#Import RoseGraphics for ease of use
+# Import RoseGraphics for ease of use
 window = rg.TurtleWindow()
-#Set the window to be simple and easy.
-m = rg.SimpleTurtle('Turtle')
+# Set the window to be simple and easy.
+m = rg.SimpleTurtle('turtle')
 n = rg.SimpleTurtle()
-#Define the turtles
-m.pen = rg.Pen('steel blue')
-n.pen = rg.Pen('green')
-#Color the turtles... trails?
+# Define the turtles
+m.pen = rg.Pen('blue',3)
+n.pen = rg.Pen('green',3)
+# Color the turtles... trails?
 m.speed = 5
 n.speed = 10
-#Set that speed
-size = 400
-#Set size of circle
-for a in range(20)
+# Set that speed
+size = 40
+for a in range(17):
+    # Set size of circle
     m.draw_circle(size)
+    #Force Circle to Conform and Repeat
+    m.pen_up()
+    m.forward(20)
+    m.left(20)
+    m.right(20) 
+
+    m.pen_down()
+    #I like this size because it goes negative
+    size=size-5
+
+for b in range(50):
+    #Makes a zigzag
+    n.forward(20)
+    n.right(20)
+    n.backward(20)
+    n.left(20)
+
+#You know why this is here
+window.close_on_mouse_click()

@@ -61,6 +61,7 @@ for k in range(13):
     # Put the pen down, then draw a square of the given size:
     blue_turtle.draw_square(size)
 
+    blue_turtle.draw
     # Move a little below and to the right of where the previous
     # square started.  Do this with the pen up (so nothing is drawn).
     blue_turtle.pen_up()
